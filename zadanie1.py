@@ -56,7 +56,6 @@ kwota_po_dwudziestejdrugiej_racie = (1 +((inflacja_22+oprocentowanie_kredytu)/12
 kwota_po_dwudziestejtrzeciej_racie = (1 +((inflacja_23+oprocentowanie_kredytu)/1200)) * kwota_po_dwudziestejdrugiej_racie - stala_wartosc_raty
 kwota_po_dwudziestejczwartej_racie = (1 +((inflacja_24+oprocentowanie_kredytu)/1200)) * kwota_po_dwudziestejtrzeciej_racie - stala_wartosc_raty
 
-
 print(formula_do_wyswietlenia.format(kwota_kredytu=kwota_po_pierwszej_racie, roznica_w_racie = (kwota_poczatkowa_kredytu - kwota_po_pierwszej_racie)))
 print(formula_do_wyswietlenia.format(kwota_kredytu=kwota_po_drugiej_racie, roznica_w_racie = (kwota_po_pierwszej_racie - kwota_po_drugiej_racie)))
 print(formula_do_wyswietlenia.format(kwota_kredytu=kwota_po_trzeciej_racie, roznica_w_racie = (kwota_po_drugiej_racie - kwota_po_trzeciej_racie)))
