@@ -27,15 +27,14 @@ while not end_program:
     print(saldo)
     print(initial_message)
     operation = input("Podaj operację, którą chcesz wykonać ")
-    if operation == "1":
 
+    if operation == "1":
         amount = float(input("Podaj kwotę, którą chcesz dodać lub odjąć z konta"))
         saldo += amount
         history.append(f"Wykonano instrukcję saldo, zasilono {amount}")
+
     if operation == "2":
-
         product = input("Podaj nazwę produktu: ")
-
         amount = float(input("Podaj ilość, którą chcesz sprzedać: "))
         product_found = False
         # sprawdzmy czy mamy towar
@@ -51,12 +50,9 @@ while not end_program:
 
     if operation == "3":
         print(magazyn)
-
         product = input("Podaj nazwę produktu: ")
-
         amount = float(input("Podaj ilość, którą chcesz nam sprzedać: "))
         product_found = False
-
         for item, item_details in magazyn.items():
             if product == item:
                 item_details["ilość"] -= amount
@@ -69,8 +65,10 @@ while not end_program:
 
     if operation == "4":
         print(f"stan konta to: {saldo} \n")
+
     if operation == "5":
         print(f"stan magazynowy to: {magazyn} \n")
+
     if operation == "6":
         product = input("Podaj nazwę produktu: ")
         product_found = False
@@ -84,7 +82,6 @@ while not end_program:
 
 
     if operation == "7":
-
         value_from = input("Podaj początkowy zakres")
         value_to = input("Podaj końcowy zakres")
         if not value_to and not value_from:
