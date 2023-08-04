@@ -22,5 +22,3 @@ def load_history(file):
     with open(file) as opened_file:
         our_data = opened_file.read().split(",")
         return our_data
-
-

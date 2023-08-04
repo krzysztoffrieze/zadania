@@ -1,6 +1,8 @@
 from funkcje_do_zarzadzania_plikami import load_saldo_and_magazyn, save_saldo_and_magazyn_to_file, load_history
 from enums import WyborKomendy
-
+file = open("saldo_i_magazyn.txt", mode="w")
+file.write('{"saldo": 10000.0, "magazyn": {"rower": {"ilosc": 2, "cena": 100}, "hulajnoga": {"ilosc": 3, "cena": 1500}}}')
+file.close()
 history = []
 initial_message = "Witaj magazynie. Lista dostępnych komend to:\n" \
                   " 1-Saldo  2-Sprzedaż  3-Zakup  4-Konto  5-Lista  6-Magazyn  7-Przegląd  8-Koniec"
